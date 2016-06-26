@@ -1,7 +1,7 @@
 var webpack = require('webpack');
-var path = require('path')
+var path = require('path');
 
-var env = 'development';
+var env = 'production';
 
 module.exports = {
     name: 'client',
@@ -19,6 +19,22 @@ module.exports = {
             }
         ]
     },
+    externals: [
+        {
+            "react": {
+                root: "React",
+                commonjs2: "react",
+                commonjs: "react",
+                amd: "react"
+            },
+            "react-dom": {
+                root: "ReactDOM",
+                commonjs2: "react-dom",
+                commonjs: "react-dom",
+                amd: "react-dom"
+            }
+        }
+    ],
     plugins: [
         new webpack.DefinePlugin({
             'process.env': {
