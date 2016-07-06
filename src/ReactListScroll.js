@@ -6,7 +6,7 @@ class ReactListScroll extends React.Component {
 		super(props);
 
 		this.state = {
-			draggerPos: 0,    
+			draggerPos: 0,
 		  	startpos: 0,      //Used to define the draggerposition on mouse down
 		  	pct: 0,
 		  	action: null,
@@ -92,7 +92,7 @@ class ReactListScroll extends React.Component {
 			//TOUCHSCROLL
 			let delta = this.state.touchoffset - e.touches[0].clientY;
 			y = this.state.draggerPos + (delta);
-		} else if(e.clientY) { 
+		} else if(e.clientY) {
 			//DRAG scrolldragger
 			//calculate delta with positive or negative
 			let fromtop = ReactDOM.findDOMNode(this).getBoundingClientRect().top, //Y er undefined i chrome
@@ -105,11 +105,11 @@ class ReactListScroll extends React.Component {
 		} else if (y >= this.state.height - this.state.scrollerHeight) {
 			y = this.state.height - this.state.scrollerHeight;
 		}
-		
+
 		this.setState({
 			pct: (y/this.state.height)*100,
 			draggerPos: y,
-			touchoffset: (e.touches) ? e.touches[0].clientY : 0 
+			touchoffset: (e.touches) ? e.touches[0].clientY : 0
 		});
 	}
 
@@ -174,4 +174,4 @@ let contentStyles = (pct) => {
 	}
 }
 
-export default ReactListScroll;
+module.exports = ReactListScroll;
