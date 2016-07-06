@@ -1,14 +1,13 @@
 var webpack = require('webpack');
 var path = require('path');
 
-var env = 'production';
-
 module.exports = {
     name: 'client',
     entry: "./src/ReactListScroll.js",
     output: {
         path: __dirname,
-        filename: "./dist/ReactListScroll.js"
+        filename: "./dist/ReactListScroll.js",
+        libraryTarget: "umd"
     },
     module: {
         loaders: [
@@ -34,12 +33,5 @@ module.exports = {
                 amd: "react-dom"
             }
         }
-    ],
-    plugins: [
-        new webpack.DefinePlugin({
-            'process.env': {
-                'NODE_ENV': JSON.stringify(env)
-            }
-        })
     ]
 }
