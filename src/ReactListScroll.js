@@ -170,6 +170,7 @@ let contentStyles = (pct) => {
 	return {
 		position: 'absolute',
 		zIndex: -1,
+		padding: '0 1em 0 0',
 		transform: 'translate3d(0, -'+pct+'%, 0)'
 	}
 }
