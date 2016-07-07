@@ -4,7 +4,7 @@
   "description": "Scrollbar component for React",
   "main": "./dist/ReactListScroll.js",
   "scripts": {
-    "build": "webpack",,
+    "build": "webpack",
     "prepublish": "webpack"
   },
   "author": "Glenn Wedin <glenn.wedin@gmail.com> (http://www.wedinweb.no)",
