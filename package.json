@@ -1,6 +1,6 @@
 {
   "name": "reactlistscroll",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Scrollbar component for React",
   "main": "./dist/ReactListScroll.js",
   "scripts": {
