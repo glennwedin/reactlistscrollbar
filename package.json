@@ -1,11 +1,11 @@
 {
   "name": "reactlistscroll",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Scrollbar component for React",
   "main": "./dist/reactlistscroll.js",
   "scripts": {
     "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "webpack"
   },
   "author": "Glenn Wedin <glenn.wedin@gmail.com> (http://www.wedinweb.no)",
   "license": "MIT",
