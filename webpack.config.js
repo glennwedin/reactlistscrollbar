@@ -5,7 +5,7 @@ var env = 'production';
 
 module.exports = {
     name: 'client',
-    entry: "./src/ReactListScroll.js",
+    entry: "./ReactListScroll.js",
     output: {
         path: __dirname,
         filename: "./dist/ReactListScroll.js"

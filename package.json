@@ -2,7 +2,7 @@
   "name": "reactlistscroll",
   "version": "1.0.0",
   "description": "Scrollbar component for React",
-  "main": "./dist/ReactListScroll.js",
+  "main": "./dist/reactlistscroll.js",
   "scripts": {
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
