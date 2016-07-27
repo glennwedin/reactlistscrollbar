@@ -6,7 +6,7 @@ module.exports = {
     entry: "./ReactListScroll.js",
     output: {
         path: __dirname,
-        filename: "./dist/ReactListScroll.js",
+        filename: "./dist/reactlistscroll.js",
         libraryTarget: "umd"
     },
     module: {
