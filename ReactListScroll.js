@@ -17,12 +17,12 @@ class ReactListScroll extends React.Component {
 		  	touchoffset: 0,
 		  	speed: props.speed || 6
 		}
-
-		this.scroll = this.scroll.bind(this);
-		this.releaseDragger = this.releaseDragger.bind(this);
   }
 
 	componentDidMount() {
+		this.scroll = this.scroll.bind(this);
+		this.releaseDragger = this.releaseDragger.bind(this);
+		
 		window.addEventListener('mouseup', this.releaseDragger);
 		window.addEventListener('touchend', this.releaseDragger);
   }
