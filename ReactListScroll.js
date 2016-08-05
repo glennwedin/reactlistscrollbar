@@ -22,9 +22,14 @@ class ReactListScroll extends React.Component {
 	componentDidMount() {
 		this.scroll = this.scroll.bind(this);
 		this.releaseDragger = this.releaseDragger.bind(this);
-		
+
 		window.addEventListener('mouseup', this.releaseDragger);
 		window.addEventListener('touchend', this.releaseDragger);
+  }
+	
+	componentWillUnmount() {
+    window.removeEventListener('mouseup', this.releaseDragger);
+		window.removeEventListener('touchend', this.releaseDragger);
   }
 
   componentDidUpdate(prevProps, prevState) {
